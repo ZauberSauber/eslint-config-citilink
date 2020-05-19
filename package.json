@@ -1,0 +1,23 @@
+{
+  "name": "eslint-config-citilink",
+  "version": "0.0.1",
+  "description": "config for front-end projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZauberSauber/eslint-config-citilink.git"
+  },
+  "keywords": [
+    "citilink",
+    "eslint-config"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZauberSauber/eslint-config-citilink/issues"
+  },
+  "homepage": "https://github.com/ZauberSauber/eslint-config-citilink#readme"
+}
