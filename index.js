@@ -1,4 +1,9 @@
 module.exports = {
+    'globals': {
+        document: 'readonly',
+        navigator: 'readonly',
+        window: 'readonly',
+    },
     'env': {
         browser: true,
         commonjs: true,

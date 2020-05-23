@@ -4,6 +4,7 @@
   "description": "config for front-end projects",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint",
     "test": "test"
   },
   "repository": {
@@ -19,5 +20,19 @@
   "bugs": {
     "url": "https://github.com/ZauberSauber/eslint-config-citilink/issues"
   },
-  "homepage": "https://github.com/ZauberSauber/eslint-config-citilink#readme"
+  "homepage": "https://github.com/ZauberSauber/eslint-config-citilink#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": ">=10.1.0",
+    "eslint": ">=7.1.0",
+    "eslint-plugin-import": ">=2.20.2",
+    "eslint-plugin-jsx-a11y": ">=6.2.3",
+    "eslint-plugin-react": ">=7.20.0"
+  }
 }
