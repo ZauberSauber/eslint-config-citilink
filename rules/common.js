@@ -1,0 +1,141 @@
+module.exports = {
+    globals: {
+        document: 'readonly',
+        navigator: 'readonly',
+        window: 'readonly',
+    },
+    env: {
+        browser: true,
+        commonjs: true,
+        es6: true,
+        jest: true,
+        node: true,
+    },
+    parser: 'babel-eslint',
+    parserOptions: {
+        'ecmaVersion': 2018,
+        'sourceType': 'module'
+    },
+    plugins: [
+        'import',
+    ],
+    rules: {
+        'array-callback-return': 'error',
+        'default-case': ['error', {commentPattern: '^no default$'}],
+        'dot-location': ['warn', 'property'],
+        'eqeqeq': ['error', 'always'],
+        'new-parens': 'error',
+        'object-curly-spacing': ['error', 'always'],
+        'no-array-constructor': 'warn',
+        'no-caller': 'error',
+        'no-cond-assign': ['warn', 'except-parens'],
+        'no-const-assign': 'error',
+        'no-control-regex': 'warn',
+        'no-delete-var': 'error',
+        'no-dupe-args': 'error',
+        'no-dupe-class-members': 'error',
+        'no-dupe-keys': 'error',
+        'no-duplicate-case': 'error',
+        'no-empty-character-class': 'error',
+        'no-empty-pattern': 'error',
+        'no-eval': 'error',
+        'no-ex-assign': 'error',
+        'no-extend-native': 'warn',
+        'no-extra-bind': 'warn',
+        'no-extra-label': 'warn',
+        'no-fallthrough': 'warn',
+        'no-func-assign': 'error',
+        'no-implied-eval': 'error',
+        'no-invalid-regexp': 'error',
+        'no-iterator': 'warn',
+        'no-label-var': 'warn',
+        'no-labels': ['warn', {allowLoop: true, allowSwitch: false}],
+        'no-lone-blocks': 'warn',
+        'no-loop-func': 'warn',
+        'no-extra-parens': ['error', 'all', {
+            nestedBinaryExpressions: false,
+            ignoreJSX: 'all',
+        }],
+        'semi': 'error',
+        'no-multi-str': 'warn',
+        'no-native-reassign': 'error',
+        'no-new-func': 'error',
+        'no-new-object': 'error',
+        'no-new-symbol': 'error',
+        'no-new-wrappers': 'error',
+        'no-obj-calls': 'warn',
+        'no-octal': 'warn',
+        'no-octal-escape': 'warn',
+        'no-redeclare': 'error',
+        'no-regex-spaces': 'error',
+        'no-script-url': 'error',
+        'no-self-assign': ['error', {props: true}],
+        'no-self-compare': 'error',
+        'no-sequences': 'warn',
+        'no-shadow-restricted-names': 'error',
+        'no-sparse-arrays': 'error',
+        'no-template-curly-in-string': 'error',
+        'no-this-before-super': 'error',
+        'no-throw-literal': 'error',
+        'no-undef': 'error',
+        'no-restricted-globals': ['error'],
+        'no-unexpected-multiline': 'warn',
+        'no-unreachable': 'error',
+        'no-unused-expressions': [
+            'error',
+            {
+                allowShortCircuit: true,
+                allowTernary: true,
+                allowTaggedTemplates: true
+            }
+        ],
+        'no-unused-labels': 'warn',
+        'no-use-before-define': [
+            'error',
+            {
+                functions: false
+            }
+        ],
+        'no-useless-computed-key': 'error',
+        'no-useless-concat': 'warn',
+        'no-useless-constructor': 'error',
+        'no-useless-escape': 'warn',
+        'no-useless-rename': [
+            'error',
+            {
+                ignoreDestructuring: false,
+                ignoreImport: false,
+                ignoreExport: false
+            }
+        ],
+        'strict': ['warn', 'never'],
+        'quotes': ['error', 'single'],
+        'no-var': 'error',
+        'no-with': 'error',
+        'no-whitespace-before-property': 'error',
+        'require-yield': 'error',
+        'rest-spread-spacing': ['error', 'never'],
+        'unicode-bom': ['warn', 'never'],
+        'use-isnan': 'error',
+        'valid-typeof': 'error',
+        'getter-return': 'error',
+        'import/first': 'error',
+        'import/no-amd': 'error',
+        'import/no-webpack-loader-syntax': 'error',
+        'no-restricted-properties': [
+            'error',
+            {
+                object: 'require',
+                property: 'ensure',
+                message:
+                    'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting',
+            },
+            {
+                object: 'System',
+                property: 'import',
+                message:
+                    'Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting',
+            },
+        ],
+    }
+};
